@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Zen Dots", cursive;
+  user-select: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #484352;
+}
+
+.content {
+  margin: 0 auto;
+  background-color: #b5838d;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 16px;
+  box-shadow: 1px 0.5px 3px #000;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #ffcdb2;
+  text-shadow: 1px 0.5px 3px #000;
+  margin: 10px;
+}
+
+.quote {
+  width: 80%;
+  height: 50%;
+  border-radius: 16px;
+  background-color: #503b3f;
+  color: #ffcdb2;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+  margin: 10px;
+  padding: 10px;
+}
+
+.button {
+  margin: 0 auto;
+  margin: 10px;
+  margin: 10px;
+}
+
+button {
+  font-size: 2em;
+  padding: 16px;
+  border-radius: 16px;
+  border: none;
+  color: #ffcdb2;
+  background-color: #000;
+  cursor: pointer;
+  position: relative;
+  transition: 0.7s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.button:active {
+  box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
+  transform: scale(0.98);
+}
+
+.quote-text {
+  animation: hello 1s forwards;
+  color: orange;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 500;
+  font-size: 2em;
+  margin: 100px 20px 30px 40px;
+}
+
+@keyframes hello {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.3, 0.7);
+  }
+  55% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.2, 0.8);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.1, 0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.quote-author {
+  animation: appear 2s forwards;
+  text-shadow: 1px 0.5px 3px #000;
+  position: relative;
+  margin: 5px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+span {
+  width: 60%;
+  height: 1px;
+  background-color: #ffcdb2;
+}
